@@ -1,0 +1,18 @@
+http://localhost:8066/jdbc/direct?group_id=ROAMUS
+
+http://localhost:8066/jdbc/datasource?group_id=ROAMUS
+
+http://localhost:8066/jdbc/dbutils?group_id=ROAMUS
+
+http://localhost:8066/jdbc/template?group_id=ROAMUS
+
+http://localhost:8066/hibernate/simple?group_id=ROAMUS
+
+
+
+
+
+http://localhost:8066/h2-console
+
+
+ 'sa' (or SA, case insensitive), default password is empty
