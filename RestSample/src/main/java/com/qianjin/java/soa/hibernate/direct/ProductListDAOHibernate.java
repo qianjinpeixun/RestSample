@@ -1,4 +1,4 @@
-package com.qianjin.java.soa.hibernate;
+package com.qianjin.java.soa.hibernate.direct;
 
 import java.util.List;
 

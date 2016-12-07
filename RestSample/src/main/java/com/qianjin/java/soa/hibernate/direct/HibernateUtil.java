@@ -1,4 +1,4 @@
-package com.qianjin.java.soa.hibernate;
+package com.qianjin.java.soa.hibernate.direct;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;

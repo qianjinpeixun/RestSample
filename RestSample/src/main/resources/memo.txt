@@ -8,9 +8,11 @@ http://localhost:8066/jdbc/template?group_id=ROAMUS
 
 http://localhost:8066/hibernate/simple?group_id=ROAMUS
 
+http://localhost:8066/hibernate/jpa?group_id=ROAMUS
 
+http://localhost:8066/hibernate/jpa2?group_id=ROAMUS
 
-
+http://localhost:8066/hibernate/springdata?group_id=ROAMUS
 
 http://localhost:8066/h2-console
 
