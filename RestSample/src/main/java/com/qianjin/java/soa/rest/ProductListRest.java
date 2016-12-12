@@ -40,6 +40,7 @@ public class ProductListRest {
 	
 	@Autowired
 	PorductListRepository porductListRepository;
+	
 	@RequestMapping("/jdbc/direct")
 	public String getByGroupIDDirectJDBC(
 			@RequestParam(value = "group_id", defaultValue = "DPTOPUPS") String groupId) {
@@ -110,6 +111,24 @@ public class ProductListRest {
 				
 		return list;
 	}
+	
+	@RequestMapping("/hibernate/springdata/create")
+	public void createSrpingData(
+			@RequestParam(value = "group_id", defaultValue = "DPTOPUPS") String groupId) {
+		
+		ProductListPOJO productListPOJO=new ProductListPOJO();
+		productListPOJO.setAccessCode("111");
+		productListPOJO.setGroupId(groupId);
+		productListPOJO.setName("nnnn");
+		productListPOJO.setServiceType(99);
+		productListPOJO.setShowOrder(100);
+		productListPOJO.setVisible(1);
+		
+		 porductListRepository.save(productListPOJO);
+				
+		
+	}
+	
 	
 	
 }
