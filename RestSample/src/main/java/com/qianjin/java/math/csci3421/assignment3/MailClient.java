@@ -1,9 +1,8 @@
 package com.qianjin.java.math.csci3421.assignment3;
 
 import java.io.*;
-import java.net.InetAddress;
-import java.net.Socket;
-import java.util.Scanner;
+import java.net.*;
+import java.util.*;
 
 public class MailClient {
 
@@ -22,8 +21,8 @@ public class MailClient {
 		String email_subject ="Test from client";
 		String email_body = "it's a test";
 		
-		String email_from="danxun123@gmail.com";
-		String email_to="danxun.jiao@gmail.com";
+		String email_from="qianjincanada@gmail.com";
+		String email_to="jin.qian.canada@gmail.com";
 
 		String mail_host_address = "smtp.gmail.com";
 		//int mail_host_port = 587;
@@ -40,8 +39,8 @@ public class MailClient {
 
 			String localhost = InetAddress.getLocalHost().getHostName();
 
-			String user_name = "danxun.jiao@gmail.com";
-			String user_password = "iamfreehero";
+			String user_name = "qianjincanada@gmail.com";
+			String user_password = "1977Qwert";
 			String userName = new sun.misc.BASE64Encoder().encode(user_name.getBytes());
 			String passWord = new sun.misc.BASE64Encoder().encode(user_password.getBytes());
 
