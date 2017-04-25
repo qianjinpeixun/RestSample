@@ -1,0 +1,91 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.hidden { display: none; }
+.unhidden { display: block; }
+#nav {
+  background-color: #800000;
+  font-size: 12px;
+  margin: 0;
+}
+#nav_wrapper {
+  width: 100%;
+  min-width: 75px;
+  margin: 0 auto;
+  text-align: left;
+}
+#nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+#nav ul li {
+  display: block;
+  width: 200px;
+}
+#nav ul li a,visited {
+  color: #CCCCCC;
+  display: block;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+#nav ul li a:hover {
+  background-color: #922222;
+}
+#nav ul ul {
+  display: inline-block;
+  position: relative;
+  background-color: #922222;
+  border: 5px solid #800000;
+  border-top: 0;
+  border-left: 3px solid #800000;
+  margin-left: 3px;
+}
+#nav ul ul li {
+  color: #CCCCCC;
+  display: block;
+  padding-left: 25px;
+  padding-right: 15px;
+  width: 192px;
+}
+#nav ul ul li a:hover {
+  background-color: #A44444;
+}
+
+.added {
+  color: red;
+}
+.centre {
+    margin: auto;
+    width: 60%;
+}
+tt {
+  font-size: 1.2em;
+}
+.consoleOut {
+  font-family:"Courier New", Courier, monospace;
+  font-size: 12px;
+  color: black;
+  background-color: #DDD;
+  border: 1px solid gray;
+  padding: 10px;
+  width: 80em;
+}
+.warning {
+  color: red;
+  font-weight:bold;
+}
+.quote {
+  font-family: Courier New, Courier, monospace;
+}
+.userInput {
+  color: #0000A0;
+  font-weight: bold;
+}

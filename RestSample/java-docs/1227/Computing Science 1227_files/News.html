@@ -1,0 +1,96 @@
+
+<!-- saved from url=(0056)http://cs.smu.ca/~myoung/csci1227/Notes/m1-solution.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><ol>
+<li><ol type="a">
+<li>private double km;</li>
+<li>public static final double PI = 3.14159;</li>
+<li>private static int numStudents = 0;</li>
+<li>LinkedList&lt;Integer&gt; intList = new LinkedList&lt;&gt;();</li>
+<li>ListIterator&lt;Integer&gt; it = intList.listIterator();</li>
+<li>Student[] stuList = new Student[150];</li>
+</ol></li>
+
+<li><ol type="a">
+<li>int</li>
+<li>void</li>
+<li>String</li>
+<li>long (int <em>OK</em>)</li>
+</ol></li>
+
+<li><ol type="a">
+<li>OK</li>
+<li>Error</li>
+<li>Error</li>
+<li>OK</li>
+<li>OK</li>
+<li>Error</li>
+</ol></li>
+
+<li><pre>public static void drawBox(int w, int h) {
+    drawBox(w, h, '*', 0);
+}
+</pre></li>
+
+<li><pre>[Fee, Fie]
+[Fee, Fie, Foe, Fum]
+[Fie, Foe, Fum]
+[Hi, Foe, Fum]
+</pre></li>
+
+<li><pre>Black
+Red
+Red
+</pre></li>
+
+<li><pre>for (int i = 0; i &lt; numbers.size(); ++i) {
+    numbers.set(i, 2 * numbers.get(i));
+}
+</pre></li>
+
+<li><pre>ListIterator&lt;Integer&gt; it = numbers.listIterator();
+while (it.hasNext()) {
+    int num = it.next();
+    it.set(2 * num);
+}
+</pre></li>
+
+<li><ol type="a">
+<li><pre>public Amplifier(int volume) {
+    this.volume = volume;
+}
+</pre></li>
+<li><pre>public int getVolume() {
+    return volume;
+}
+
+public void setVolume(int newVolume) {
+    if (0 &lt;= newVolume &amp;&amp; newVolume &lt;= 11) {
+        volume = newVolume;
+    }
+}
+</pre></li>
+<li><pre>@Override
+public String toString() {
+    return "Amplifier at volume " + volume;
+}
+</pre></li>
+</ol></li>
+
+<li><ul>
+<li>e) any of the above</li>
+<li>e) returned to the client</li>
+<li>d) this(100);</li>
+<li>d) public Thingummy(int n, String s)</li>
+<li>d) only inside the method doThis</li>
+<li>d) public static</li>
+<li>e) new Car();</li>
+<li>b) Car myCar;</li>
+<li><font color="gray">b) has a default, parameterless constructor provided by Java</font></li>
+<li>a) an IndexOutOfBoundsException is thrown</li>
+<li>a) a1.clear();</li>
+<li>c) the method doThis should have been declared static</li>
+<li>a) overloaded</li>
+<li>c) public static String toRoman(int n) { return "XLII"; }</li>
+</ul></li>
+
+</ol></body></html>

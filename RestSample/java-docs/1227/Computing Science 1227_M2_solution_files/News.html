@@ -1,0 +1,103 @@
+
+<!-- saved from url=(0056)http://cs.smu.ca/~myoung/csci1227/Notes/m2-solution.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></head><body><ol>
+<li><ol type="a">
+<li>File f = new File("MyData.txt");</li>
+<li>Scanner in = new Scanner(f);</li>
+<li>PrintWriter out = new PrintWriter(f);</li>
+</ol></li>
+
+<li><pre>double sum = 0.0;
+while (in.hasNextDouble()) {
+    double n = in.nextDouble();
+    sum += n;
+}
+</pre></li>
+
+<li><ol type="a">
+<li>OK</li>
+<li>OK</li>
+<li>Error</li>
+<li>OK</li>
+</ol></li>
+
+<li><pre>try {
+    PrintWriter out = new PrintWriter(new File("MyOutput.txt"));
+    out.println("This is my output file.");
+    out.close();
+} catch (FileNotFoundException fnf) {
+    System.err.println("Could not open file.");
+}
+</pre></li>
+
+<li><pre>public class Thingy <span style="color: red">implements Comparable&lt;Thingy&gt;</span>
+{
+    private int value;
+
+    public Thingy(int v)
+    {
+        value = v;
+    }
+    public int getValue()
+    {
+        return value;
+    }
+<span style="color: red">
+    public int compareTo(Thingy that) {
+        return this.value - that.value;
+    }
+</span>
+}
+</pre></li>
+
+<li><pre>public static void cheer(int n)
+
+{
+
+    if (n &lt; 0)
+
+    {
+        <span style="color: red">throw new IllegalArgumentException</span>
+        <span style="text-decoration: line-through">System.err.println</span>("No negatives allowed");
+
+        <span style="text-decoration: line-through">System.exit(1);</span>
+    
+    }
+
+    for (int i = 1; i &lt;= n; i++)
+
+    {
+
+        System.out.println("Hip-");
+
+    }
+
+    System.out.println("Hooray!");
+
+}
+</pre></li>
+
+<li><pre>public interface Usable {
+    public void showValues();
+    public boolean hasZeroValue();
+    public int getZeroLocation();
+    public double solve(int zero);
+}
+</pre></li>
+
+<li>
+d)<br>
+c)<br>
+b)<br>
+a)
+</li>
+
+<li><ul>
+<li>d) public void method() throws MyException</li>
+<li>e) (all of the above)</li>
+<li>j) if (m instanceof Circle)</li>
+<li>a) File</li>
+</ul></li>
+
+</ol>
+</body></html>
