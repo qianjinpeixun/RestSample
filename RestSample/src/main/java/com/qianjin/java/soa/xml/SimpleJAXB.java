@@ -18,7 +18,7 @@ public class SimpleJAXB {
 			String xml = FileUtils.readFileToString(new File("C:/git-sourcecode/RestSample/src/main/resources/test-data/books.xml"), "utf-8");
 			StreamSource stream = new StreamSource(new StringReader(xml));
 			Catalog catalog = (Catalog)unmarshaller.unmarshal(stream);
-			System.out.println(catalog.getBooks());
+			System.out.println(catalog.getBooks().get(0).getAuthor());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

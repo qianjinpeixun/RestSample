@@ -11,7 +11,6 @@ public class ApacheLogFileReport {
 
 	private static int getCount(String url, ArrayList list) {
 
-
 		int ret = 0;
 		for (int i = 0; i < list.size(); i++) {
 			ApacheLogFile apacheLogFile = (ApacheLogFile) list.get(i);
@@ -25,10 +24,10 @@ public class ApacheLogFileReport {
 	}
 
 	public static void main(String[] args) {
+		List list;
 		try {
-			List list = FileUtils
-					.readLines(new File("C:/git-sourcecode/RestSample/src/main/resources/test-data/access_log"));
-			ArrayList apacheLoglist = new ArrayList();
+			list = FileUtils.readLines(new File("C:/git-sourcecode/RestSample/src/main/resources/test-data/access_log"));
+			ArrayList<ApacheLogFile> apacheLoglist = new ArrayList<ApacheLogFile>();
 			for (int i = 0; i < list.size(); i++) {
 				String line = (String) list.get(i);
 				String url = StringUtils.substringBetween(line, "GET ", " HTTP");
