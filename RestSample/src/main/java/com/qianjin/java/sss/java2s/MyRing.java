@@ -1,8 +1,9 @@
 package com.qianjin.java.sss.java2s;
 
 /**
- * This classes "implement" the interfaces of Ring, but it really just throw UnsupportedOperationExceptions for all the methods.
- * In order to simplify the implementation, a String object is set to generic Ring interface 
+ * This classes "implement" the interfaces of Ring, but it really just throw
+ * UnsupportedOperationExceptions for all the methods. In order to simplify the
+ * implementation, a String object is set to generic Ring interface
  *
  * @author Lingda Cai A00372181
  * @version 1.0
