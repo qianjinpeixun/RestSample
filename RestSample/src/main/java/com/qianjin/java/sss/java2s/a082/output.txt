@@ -1,0 +1,52 @@
+Sample Run
+
+Return to assignment description
+Here is the output of the program as given to you:
+
+The words in lexicographic order:
+
+    Bombadil        Bright          Old             Tom
+    a               blue            fellow          merry
+    was
+
+Failed to add to a PQ!
+Java Result: 1
+Here is the version after you have revised PQ to grow:
+
+The words in lexicographic order:
+
+    And             And             Bombadil        Bright          
+    Green           He              Old             Tom             
+    a               a               all             blue            
+    boots           breeches        feather         fellow          
+    girdle          hat             his             his             
+    his             his             his             in              
+    jacket          leather         merry           of              
+    swan-wing       tall            was             was             
+    were            were            wore            yellow          
+And here is the output after you have revised PQ to accept a Comparator:
+
+The words in lexicographic order:
+
+    And             And             Bombadil        Bright          
+    Green           He              Old             Tom             
+    a               a               all             blue            
+    boots           breeches        feather         fellow          
+    girdle          hat             his             his             
+    his             his             his             in              
+    jacket          leather         merry           of              
+    swan-wing       tall            was             was             
+    were            were            wore            yellow          
+
+The words in alphabetical order:
+
+    a               a               all             And             
+    And             blue            Bombadil        boots           
+    breeches        Bright          feather         fellow          
+    girdle          Green           hat             He              
+    his             his             his             his             
+    his             in              jacket          leather         
+    merry           of              Old             swan-wing       
+    tall            Tom             was             was             
+    were            were            wore            yellow
+Return to Outline page / assignment description

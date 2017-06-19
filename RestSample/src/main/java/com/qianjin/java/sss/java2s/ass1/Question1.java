@@ -1,4 +1,4 @@
-package com.qianjin.java.sss.java2s.a01;
+package com.qianjin.java.sss.java2s.ass1;
 
 /*
  * Include all of the following work in Question1

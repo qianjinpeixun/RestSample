@@ -1,4 +1,4 @@
-package com.qianjin.java.sss.java2s.a01;
+package com.qianjin.java.sss.java2s.ass1;
 
 import javax.swing.plaf.synth.SynthSeparatorUI;
 

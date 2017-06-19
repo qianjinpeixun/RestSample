@@ -1,5 +1,6 @@
 package com.qianjin.java.sss.java2s.a05;
 
+
 import java.io.*;
 import java.util.*;
 
@@ -13,13 +14,13 @@ import java.util.*;
  */
 public class TextItems {
 
-    // point to the file which will be read
+    // Pointing to the file which will be read
     private File file;
     // Using this list object to hold the information read from the file.
     private List<Item> itemsList = new ArrayList<Item>();
-    // an indicator if there are errors during reading from one file
+    // An indicator if there are errors during reading from one file
     private boolean hasErrors = false;
-    // the detailed error message
+    // The detailed error message
     private String errorMessage = "";
 
     /**

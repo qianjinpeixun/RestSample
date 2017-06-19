@@ -9,6 +9,7 @@ package com.qianjin.java.sss.java2s.a02;
  * @version 1.0
  */
 
+
 public class MyRing implements Ring<String> {
 
 	public RingIterator<String> iterator() {

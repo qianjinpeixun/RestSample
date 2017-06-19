@@ -1,0 +1,83 @@
+Sample Run
+
+Return to assignment description
+There are multiple possible correct results for this program. Here is one possible (correct) outcome:
+
+
+Operation Counts for Adding to/Removing from a PQ of size N.
+============================================================
+
+       N    Adding  Removing
+  ------  --------  --------
+       0         5       n/a
+       1        10         6
+       2        10         6
+       3        15        11
+       4        15        14
+       5        15        19
+       6        15        14
+       7        20        19
+       8        20        22
+       9        20        27
+      10        20        22
+      11        20        27
+      12        20        22
+      13        20        27
+      14        20        22
+      15        25        27
+      16        25        30
+      17        25        35
+      18        25        30
+      19        25        35
+      20        25        30
+      21        25        35
+      22        25        30
+      23        25        35
+      24        25        30
+      25        25        35
+      26        25        30
+      27        25        35
+      28        25        30
+      29        25        35
+      30        25        30
+      31        30        35
+Here is another possible (correct) outcome:
+
+
+Operation Counts for Adding to/Removing from a PQ of size N.
+============================================================
+
+       N    Adding  Removing
+  ------    ------  --------
+       0         1       n/a
+       1         4         3
+       2         4         3
+       3         7         4
+       4         7         6
+       5         7         7
+       6         7         6
+       7        10         7
+       8        10         9
+       9        10        10
+      10        10         9
+      11        10        10
+      12        10         9
+      13        10        10
+      14        10         9
+      15        13        10
+      16        13        12
+      17        13        13
+      18        13        12
+      19        13        13
+      20        13        12
+      21        13        13
+      22        13        12
+      23        13        13
+      24        13        12
+      25        13        13
+      26        13        12
+      27        13        13
+      28        13        12
+      29        13        13
+      30        13        12
+      31        16        13

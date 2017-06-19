@@ -1,0 +1,163 @@
+Sample Run
+
+Return to assignment description
+Here is the output of the original BubbleSort program:
+
+Bubble Sort
+===========
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [A, B, C, D]
+one more bubbled up: [A, B, C, D]
+one more bubbled up: [A, B, C, D]
+one more bubbled up: [A, B, C, D]
+After sorting:
+    [A, B, C, D]
+To sort 4 names took 0 assignments and 6 comparisons,
+for a total of 6 operations.
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [B, C, A, D, E]
+one more bubbled up: [B, A, C, D, E]
+one more bubbled up: [A, B, C, D, E]
+one more bubbled up: [A, B, C, D, E]
+one more bubbled up: [A, B, C, D, E]
+After sorting:
+    [A, B, C, D, E]
+To sort 5 names took 6 assignments and 10 comparisons,
+for a total of 16 operations.
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [A, G, B, C, E, F, D]
+one more bubbled up: [A, B, C, E, F, D, G]
+one more bubbled up: [A, B, C, E, D, F, G]
+one more bubbled up: [A, B, C, D, E, F, G]
+one more bubbled up: [A, B, C, D, E, F, G]
+one more bubbled up: [A, B, C, D, E, F, G]
+one more bubbled up: [A, B, C, D, E, F, G]
+After sorting:
+    [A, B, C, D, E, F, G]
+To sort 7 names took 21 assignments and 21 comparisons,
+for a total of 42 operations.
+
+
+Here is the output after it's been revised to notice the last swap:
+
+Bubble Sort
+===========
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [A, B, C, D]
+one more bubbled up: [A, B, C, D]
+(last swap was in position -1)
+After sorting:
+    [A, B, C, D]
+To sort 4 names took 0 assignments and 3 comparisons,
+for a total of 3 operations.
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [B, C, A, D, E]
+one more bubbled up: [B, A, C, D, E]
+(last swap was in position 1)
+one more bubbled up: [A, B, C, D, E]
+(last swap was in position 0)
+After sorting:
+    [A, B, C, D, E]
+To sort 5 names took 6 assignments and 5 comparisons,
+for a total of 11 operations.
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [A, G, B, C, E, F, D]
+one more bubbled up: [A, B, C, E, F, D, G]
+(last swap was in position 5)
+one more bubbled up: [A, B, C, E, D, F, G]
+(last swap was in position 4)
+one more bubbled up: [A, B, C, D, E, F, G]
+(last swap was in position 3)
+one more bubbled up: [A, B, C, D, E, F, G]
+(last swap was in position -1)
+After sorting:
+    [A, B, C, D, E, F, G]
+To sort 7 names took 21 assignments and 18 comparisons,
+for a total of 39 operations.
+And here is the output for the final version. Note that, now that it pushes items in both directions, it's Shaker Sort instead of Bubble Sort.
+
+Shaker Sort
+===========
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [A, B, C, D]
+one more bubbled up: [A, B, C, D]
+(last swap was in position -1)
+After sorting:
+    [A, B, C, D]
+To sort 4 names took 0 assignments and 3 comparisons,
+for a total of 3 operations.
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [B, C, A, D, E]
+one more bubbled up: [B, A, C, D, E]
+(last swap was in position 1)
+one more bubbled down: [A, B, C, D, E]
+(last swap was in position 1)
+After sorting:
+    [A, B, C, D, E]
+To sort 5 names took 6 assignments and 5 comparisons,
+for a total of 11 operations.
+
+
+Sorting Strings
+---------------
+
+Before sorting:
+    [A, G, B, C, E, F, D]
+one more bubbled up: [A, B, C, E, F, D, G]
+(last swap was in position 5)
+one more bubbled down: [A, B, C, D, E, F, G]
+(last swap was in position 4)
+one more bubbled up: [A, B, C, D, E, F, G]
+(last swap was in position -1)
+After sorting:
+    [A, B, C, D, E, F, G]
+To sort 7 names took 21 assignments and 12 comparisons,
+for a total of 33 operations.
+
+
+Sorting Numbers
+---------------
+
+To sort 10,000 numbers took 74,410,839 assignments and 33,153,866 comparisons,
+for a total of 107,564,705 operations.
+Return to Outline page / assignment description

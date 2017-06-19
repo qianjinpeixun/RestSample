@@ -1,0 +1,87 @@
+Postfix Calculator
+------------------
+
+by Mark Young (A00000000)
+
+This program reads and evaluates postfix expressions.
+Enter your expression at the >>> sign.
+Enter QUIT to exit the program.
+
+>>> 15 6 +
+15.0 + 6.0 = 21.0
+
+Result: 21.0
+
+>>> 15 6 -
+15.0 - 6.0 = 9.0
+
+Result: 9.0
+
+>>> 15 6 *
+15.0 * 6.0 = 90.0
+
+Result: 90.0
+
+>>> 15 6 /
+15.0 / 6.0 = 2.5
+
+Result: 2.5
+
+>>> 15 6 %
+15.0 % 6.0 = 3.0
+
+Result: 3.0
+
+>>> 15 6 //
+15.0 // 6.0 = 2.0
+
+Result: 2.0
+
+>>> 3.5 1.2 //
+3.5 // 1.2 = 2.0
+
+Result: 2.0
+
+>>> 3.5 1.2 %
+3.5 % 1.2 = 1.1
+
+Result: 1.1
+
+>>> 10 3 ^
+10.0 ^ 3.0 = 1000.0
+
+Result: 1000.0
+
+>>> 15 6 + 7 *
+15.0 + 6.0 = 21.0
+21.0 * 7.0 = 147.0
+
+Result: 147.0
+
+>>> 15 6 7 + *
+6.0 + 7.0 = 13.0
+15.0 * 13.0 = 195.0
+
+Result: 195.0
+
+>>> 15 6 &
+Error: Unknown operator: &
+
+>>> 15 6 7 + #
+6.0 + 7.0 = 13.0
+Error: Unknown operator: #
+
+>>> 15
+
+Result: 15.0
+
+>>> 15 6
+Error: too many numbers in that expression!
+
+>>> 15 +
+Error: not enuf numbers in that expression!
+
+>>> 15 6 7+*
+Error: Unknown operator: 7+*
+
+>>> quIT

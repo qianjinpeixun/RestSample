@@ -1,0 +1,81 @@
+There are three parts in this text file:
+1. the output the program produced for revised PQ class
+2. formulas for the number of operations for adding to/removing from a PQ of size N
+3. he orders of magnitude for those formulas
+
+Part One:
+Operation Counts for Adding to/Removing from a PQ of size N.
+============================================================
+
+       N    Adding  Removing
+  ------    ------  --------
+       0         5       n/a
+       1        10         6
+       2        10         6
+       3        15        11
+       4        15        14
+       5        15        19
+       6        15        14
+       7        20        19
+       8        20        22
+       9        20        27
+      10        20        22
+      11        20        27
+      12        20        22
+      13        20        27
+      14        20        22
+      15        25        27
+      16        25        30
+      17        25        35
+      18        25        30
+      19        25        35
+      20        25        30
+      21        25        35
+      22        25        30
+      23        25        35
+      24        25        30
+      25        25        35
+      26        25        30
+      27        25        35
+      28        25        30
+      29        25        35
+      30        25        30
+      31        30        35
+
+Part Two:
+Formulas for the number of operations for adding to/removing from a PQ of size N
+For adding: 
+  Since the PQ class use binary search, according to the introduction in the class, O(N)=O(log N)
+  according to the analysis from the above result, the formula for adding is: O(N) = 5 * 5*log(N+1)
+  verify this formula : 
+  O(0) = 5 + 5*log(1) = 5
+  O(1) = 5 + 5*log(2) = 10
+  O(2) = 5 + 5*log(3) = 10
+  O(3) = 5 + 5*log(4) = 15
+  O(4) = 5 + 5*log(5) = 15
+  O(7) = 5 + 5*log(8) = 20
+  
+  For removing (odd):   O(N) = 6 + (8*log(N)-3)
+  verify this formula :
+  O(1) = 6 + (8*log(1)-3) = 3 ( it's different, because 8*log(1)-3 is a negative number)
+  O(3) = 6 + (8*log(3)-3) = 11 
+  O(5) = 6 + (8*log(5)-3) = 19 
+  O(7) = 6 + (8*log(7)-3) = 19 
+  O(9) = 6 + (8*log(9)-3) = 27
+  O(17)= 6 + (8*log(1)-3) = 35
+  
+  For removing (even):   O(N) = 6 + (8*(log(N)-1))
+  verify this formula:
+  O(2) = 6 + (8 * (log(2)-1)) = 6
+  O(4) = 6 + (8 * (log(4)-1)) = 14
+  O(6) = 6 + (8 * (log(6)-1)) = 14
+  O(8) = 6 + (8 * (log(2)-1)) = 22
+  O(16)= 6 + (8 * (log(2)-1)) = 30
+  
+  Part Three:
+  add:              O(N) = 5 * 5*log(N+1)
+  remove(odd):      O(N) = 6 + (8*log(N)-3)
+  remove(even):     O(N) = 6 + (8*(log(N)-1))
+  Finally, the orders of magnitude of adding/removing from a PQ of size N is : O(log N)
+  
+  

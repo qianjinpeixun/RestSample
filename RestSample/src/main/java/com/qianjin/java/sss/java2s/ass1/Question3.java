@@ -1,4 +1,4 @@
-package com.qianjin.java.sss.java2s.a01;
+package com.qianjin.java.sss.java2s.ass1;
 
 /*
  * Include all of the following work in Question 3
@@ -20,7 +20,7 @@ public class Question3 {
     // square numbers are 4, 9, and 49, since these are equal to 2*2, 3*3, and
     // 7*7, respectively.
     public static boolean isSquare(int value) {
-        for (int i = 1; i < value; i++) {
+        for (int i = 1; i <= value; i++) {
             if (value == (i * i))
                 return true;
         }
@@ -32,7 +32,7 @@ public class Question3 {
     // of cube numbers are 8, 125, and 216, since these are equal to 2*2*2,
     // 5*5*5, and 6*6*6, respectively.
     public static boolean isCube(int value) {
-        for (int i = 1; i < value; i++) {
+        for (int i = 1; i <= value; i++) {
             if (value == (i * i * i))
                 return true;
         }
