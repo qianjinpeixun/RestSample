@@ -1,3 +1,5 @@
+package com.qianjin.java.sss.java2s.ass42;
+
 
 import java.util.Scanner;
 

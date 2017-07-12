@@ -1,0 +1,115 @@
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://wireless.testcompany.ca/dataservice/api/"
+	xmlns:tns="http://wireless.testcompany.ca/dataservice/api/"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
+
+
+
+
+
+	<xs:complexType name="HeadType">
+		<xs:sequence>
+			<xs:element minOccurs="1" maxOccurs="1" name="DateTime"
+				type="xsd:string" />
+			<xs:element minOccurs="1" maxOccurs="1" name="UserId"
+				type="xsd:string" />
+			<xs:element minOccurs="1" maxOccurs="1" name="RoundTrip"
+				type="xsd:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xs:complexType name="NameType">
+		<xs:sequence>
+			<xs:element minOccurs="1" maxOccurs="1" name="First" type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="Middle"
+				type="xsd:string" />
+			<xs:element minOccurs="1" maxOccurs="1" name="Last" type="xsd:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+	<xs:complexType name="IdentificationTypeforCredit">
+		<xs:sequence>
+			<xs:element minOccurs="0" maxOccurs="1" name="BirthDate"
+				type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="SecondIDNumber"
+				type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="IdentityNumber"
+				type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="SINNumber"
+				type="xsd:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+	<xs:complexType name="ContactType">
+		<xs:sequence>
+			<xs:element minOccurs="0" maxOccurs="1" name="PrimaryNumber"
+				type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="AlternatePhoneNumber"
+				type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="EmailAddress"
+				type="xsd:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+
+	<xs:complexType name="AddressType">
+		<xs:sequence>
+			<xs:element minOccurs="1" maxOccurs="1" name="Line1" type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="Line2" type="xsd:string" />
+			<xs:element minOccurs="1" maxOccurs="1" name="City" type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="County"
+				type="xsd:string" />
+			<xs:element minOccurs="0" maxOccurs="1" name="Province"
+				type="xsd:string" />
+			<xs:element minOccurs="1" maxOccurs="1" name="PostalCode"
+				type="xsd:string" />
+			<xs:element minOccurs="1" maxOccurs="1" name="Country"
+				type="xsd:string" />
+		</xs:sequence>
+	</xs:complexType>
+
+
+	<xsd:element name="checkCustomer">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element minOccurs="1" maxOccurs="1" name="head"
+					type="tns:HeadType" />
+				<xsd:element minOccurs="1" maxOccurs="1" name="Code"
+					type="xsd:string" />
+				<xsd:element minOccurs="1" maxOccurs="1" name="Language"
+					type="xsd:string" />
+				<xsd:element minOccurs="1" maxOccurs="1" name="Category"
+					type="xsd:string" />
+				<xsd:element minOccurs="1" maxOccurs="1" name="Name"
+					type="tns:NameType" />
+				<xsd:element minOccurs="1" maxOccurs="1" name="Identifier"
+					type="tns:IdentificationTypeforCredit" />
+				<xsd:element minOccurs="0" maxOccurs="1" name="Contact"
+					type="tns:ContactType" />
+				<xsd:element minOccurs="1" maxOccurs="1" name="Address"
+					type="tns:AddressType" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+
+	<xsd:element name="checkCustomerResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element minOccurs="1" maxOccurs="1" name="head"
+					type="tns:HeadType" />
+				<xsd:element minOccurs="1" maxOccurs="1" name="responseCode"
+					type="xsd:string" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+
+
+</xsd:schema>

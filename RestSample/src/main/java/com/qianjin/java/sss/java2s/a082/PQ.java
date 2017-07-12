@@ -20,7 +20,7 @@ public class PQ<T extends Comparable<? super T>> {
 
     public PQ() {
         // set the default comparator
-        this((T t1, T t2) -> t1.compareTo(t2));
+        //this((T t1, T t2) -> t1.compareTo(t2));
     }// end default constructor
 
     /**
